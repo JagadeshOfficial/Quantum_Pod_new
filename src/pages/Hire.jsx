@@ -21,7 +21,7 @@ const Hire = () => {
                 justifyContent: 'center',
                 textAlign: 'center',
                 overflow: 'hidden',
-                background: 'radial-gradient(circle at center, #1a1a2e 0%, #000 100%)'
+                background: 'radial-gradient(circle at center, #F0F4F8 0%, #FFFFFF 100%)'
             }}>
                 <div className="container animate-fade-in">
                     <h1 className="hero-title" style={{ fontSize: '4rem', marginBottom: '1.5rem', lineHeight: '1.1' }}>
@@ -40,7 +40,7 @@ const Hire = () => {
             </section>
 
             {/* Stats Section */}
-            <section style={{ borderBottom: '1px solid var(--glass-border)', background: 'rgba(255,255,255,0.02)' }}>
+            <section style={{ borderBottom: '1px solid var(--glass-border)', background: 'rgba(0,0,0,0.02)' }}>
                 <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1rem', padding: '3rem 0', textAlign: 'center' }}>
                     {[
                         { val: "300+", label: "Hiring Partners" },
@@ -49,7 +49,7 @@ const Hire = () => {
                         { val: "85%", label: "Selection Ratio" }
                     ].map((stat, idx) => (
                         <div key={idx} style={{ borderRight: idx !== 3 ? '1px solid var(--glass-border)' : 'none' }}>
-                            <h3 style={{ fontSize: '2.5rem', color: '#fff', margin: 0 }}>{stat.val}</h3>
+                            <h3 style={{ fontSize: '2.5rem', color: 'var(--accent-primary)', margin: 0 }}>{stat.val}</h3>
                             <p style={{ margin: '0.5rem 0 0', color: 'var(--text-secondary)' }}>{stat.label}</p>
                         </div>
                     ))}
@@ -71,7 +71,7 @@ const Hire = () => {
                         {candidates.map(candidate => (
                             <div key={candidate.id} className="card" style={{ padding: '2rem', transition: 'transform 0.3s' }}>
                                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '1.5rem' }}>
-                                    <div style={{ padding: '0.8rem', background: 'rgba(0, 212, 255, 0.1)', borderRadius: '12px' }}>
+                                    <div style={{ padding: '0.8rem', background: 'rgba(10, 132, 255, 0.1)', borderRadius: '12px' }}>
                                         <candidate.icon size={28} color="var(--accent-primary)" />
                                     </div>
                                     <span style={{ fontSize: '0.8rem', padding: '0.3rem 0.8rem', borderRadius: '20px', background: 'var(--bg-secondary)', height: 'fit-content' }}>
@@ -84,7 +84,7 @@ const Hire = () => {
 
                                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '2rem' }}>
                                     {candidate.skills.map(skill => (
-                                        <span key={skill} style={{ fontSize: '0.8rem', padding: '0.3rem 0.8rem', borderRadius: '4px', border: '1px solid var(--glass-border)', color: '#ccc' }}>
+                                        <span key={skill} style={{ fontSize: '0.8rem', padding: '0.3rem 0.8rem', borderRadius: '4px', border: '1px solid var(--glass-border)', color: 'var(--text-secondary)' }}>
                                             {skill}
                                         </span>
                                     ))}
@@ -148,8 +148,8 @@ const labelStyle = {
 };
 
 const inputStyle = {
-    width: '100%', padding: '0.8rem', background: 'rgba(255,255,255,0.05)',
-    border: '1px solid var(--glass-border)', borderRadius: '8px', color: '#fff', fontSize: '1rem', outline: 'none'
+    width: '100%', padding: '0.8rem', background: 'rgba(0,0,0,0.05)',
+    border: '1px solid var(--glass-border)', borderRadius: '8px', color: 'var(--text-primary)', fontSize: '1rem', outline: 'none'
 };
 
 export default Hire;

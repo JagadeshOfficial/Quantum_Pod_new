@@ -22,12 +22,12 @@ const Teach = () => {
                     backgroundPosition: 'center',
                     zIndex: -2
                 }}></div>
-                <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'rgba(0,0,0,0.8)', zIndex: -1 }}></div>
+                <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'rgba(255,255,255,0.85)', zIndex: -1 }}></div>
 
                 <div className="container animate-fade-in" style={{ zIndex: 1 }}>
                     <span style={{
                         display: 'inline-block', padding: '0.5rem 1.5rem', borderRadius: '50px',
-                        background: 'rgba(0, 212, 255, 0.1)', border: '1px solid var(--accent-primary)',
+                        background: 'rgba(10, 132, 255, 0.1)', border: '1px solid var(--accent-primary)',
                         color: 'var(--accent-primary)', fontWeight: 'bold', marginBottom: '1.5rem',
                         backdropFilter: 'blur(5px)'
                     }}>
@@ -79,7 +79,7 @@ const Teach = () => {
                         ].map((item, idx) => (
                             <div key={idx} className="card" style={{ padding: '2rem', transition: 'transform 0.3s' }}>
                                 <div style={{
-                                    width: '60px', height: '60px', borderRadius: '15px', background: 'rgba(255,255,255,0.05)',
+                                    width: '60px', height: '60px', borderRadius: '15px', background: 'rgba(0,0,0,0.05)',
                                     display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem'
                                 }}>
                                     <item.icon size={30} color="var(--accent-primary)" />
@@ -97,7 +97,7 @@ const Teach = () => {
                 <div className="container">
                     <div style={{
                         display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))',
-                        gap: '4rem', alignItems: 'center', background: 'rgba(0,0,0,0.3)',
+                        gap: '4rem', alignItems: 'center', background: 'rgba(255,255,255,0.5)',
                         padding: '4rem', borderRadius: '30px', border: '1px solid var(--glass-border)'
                     }}>
 
@@ -108,7 +108,7 @@ const Teach = () => {
                                 The application process is simple. Once you apply, our academic team will review your profile and schedule a short demo session.
                             </p>
 
-                            <h4 style={{ fontSize: '1.2rem', marginBottom: '1.5rem', color: '#fff' }}>Eligibility Checklist:</h4>
+                            <h4 style={{ fontSize: '1.2rem', marginBottom: '1.5rem', color: 'var(--text-primary)' }}>Eligibility Checklist:</h4>
                             <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                                 {[
                                     "3+ Years of Industry Experience",
@@ -124,7 +124,7 @@ const Teach = () => {
                         </div>
 
                         {/* Right Side: Form */}
-                        <div className="card" style={{ padding: '2.5rem', background: 'rgba(30,30,40,0.95)' }}>
+                        <div className="card" style={{ padding: '2.5rem', background: 'rgba(255,255,255,0.95)' }}>
                             <form style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
                                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                                     <div>
@@ -182,8 +182,8 @@ const labelStyle = {
 };
 
 const inputStyle = {
-    width: '100%', padding: '0.8rem', background: 'rgba(255,255,255,0.05)',
-    border: '1px solid var(--glass-border)', borderRadius: '8px', color: '#fff', fontSize: '1rem', outline: 'none'
+    width: '100%', padding: '0.8rem', background: 'rgba(0,0,0,0.05)',
+    border: '1px solid var(--glass-border)', borderRadius: '8px', color: 'var(--text-primary)', fontSize: '1rem', outline: 'none'
 };
 
 export default Teach;

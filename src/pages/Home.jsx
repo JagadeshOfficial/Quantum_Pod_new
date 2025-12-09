@@ -28,7 +28,7 @@ const Home = () => {
                         </span>
                         <h1 className="hero-title" style={{ fontWeight: '800' }}>{home.hero.title}</h1>
                         <div style={{
-                            background: 'rgba(0, 212, 255, 0.1)',
+                            background: 'rgba(10, 132, 255, 0.1)',
                             border: '1px solid var(--accent-primary)',
                             padding: '0.5rem 1rem',
                             borderRadius: '8px',
@@ -105,7 +105,7 @@ const Home = () => {
                         <p style={{ color: 'var(--text-secondary)' }}>Hiring Partners Network</p>
                     </div>
                     <div>
-                        <h3 style={{ fontSize: '2rem', color: '#00d4ff', marginBottom: '0.5rem' }}>55%</h3>
+                        <h3 style={{ fontSize: '2rem', color: 'var(--accent-primary)', marginBottom: '0.5rem' }}>55%</h3>
                         <p style={{ color: 'var(--text-secondary)' }}>Avg Salary Hike</p>
                     </div>
                 </div>
@@ -158,7 +158,7 @@ const Home = () => {
                                         <div className="course-info">
                                             <h3 className="course-title" style={{ fontSize: '1.4rem' }}>{course.title}</h3>
                                             <div className="course-meta" style={{ marginBottom: '1.5rem' }}>
-                                                <span style={{ background: 'rgba(0, 212, 255, 0.1)', padding: '4px 8px', borderRadius: '4px', color: 'var(--accent-primary)', fontSize: '0.8rem' }}>Beginner to Pro</span>
+                                                <span style={{ background: 'rgba(10, 132, 255, 0.1)', padding: '4px 8px', borderRadius: '4px', color: 'var(--accent-primary)', fontSize: '0.8rem' }}>Beginner to Pro</span>
                                             </div>
                                             <span className="btn-outline" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: '0.75rem', borderRadius: '8px', width: '100%' }}>
                                                 View Program <ChevronRight size={16} />
@@ -179,7 +179,7 @@ const Home = () => {
                         {home.whyChoose.map((category, idx) => (
                             <div key={idx} className="card" style={{ height: '100%' }}>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
-                                    <div style={{ background: 'rgba(0, 212, 255, 0.1)', padding: '10px', borderRadius: '8px' }}>
+                                    <div style={{ background: 'rgba(10, 132, 255, 0.1)', padding: '10px', borderRadius: '8px' }}>
                                         {iconMap[Object.keys(iconMap)[idx % Object.keys(iconMap).length]]}
                                     </div>
                                     <h3 style={{ fontSize: '1.2rem', margin: 0 }}>{category.title}</h3>

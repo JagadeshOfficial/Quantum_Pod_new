@@ -52,7 +52,7 @@ const Privacy = () => {
                     {/* Sticky Sidebar */}
                     <aside style={{ flex: '0 0 280px' }}>
                         <div className="card" style={{ position: 'sticky', top: '100px', padding: '1.5rem', borderLeft: '4px solid var(--accent-secondary)' }}>
-                            <h3 style={{ marginBottom: '1rem', fontSize: '1.2rem', color: '#fff' }}>Table of Contents</h3>
+                            <h3 style={{ marginBottom: '1rem', fontSize: '1.2rem', color: 'var(--text-primary)' }}>Table of Contents</h3>
                             <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
                                 {sections.map(section => (
                                     <li key={section.id}
@@ -77,8 +77,8 @@ const Privacy = () => {
                         <div id="collection" style={sectionStyle}>
                             <h2 style={headingStyle}>1. Information We Collect</h2>
                             <p>We collect information you provide directly to us, such as when you create an account, subscribe to our newsletter, request customer support, or otherwise communicate with us.</p>
-                            <div className="card" style={{ padding: '1.5rem', background: 'rgba(255,255,255,0.03)', marginTop: '1rem' }}>
-                                <h4 style={{ color: '#fff', marginBottom: '1rem' }}>Types of Data:</h4>
+                            <div className="card" style={{ padding: '1.5rem', background: 'rgba(0,0,0,0.03)', marginTop: '1rem' }}>
+                                <h4 style={{ color: 'var(--text-primary)', marginBottom: '1rem' }}>Types of Data:</h4>
                                 <ul style={{ paddingLeft: '1.5rem', margin: 0 }}>
                                     <li><strong>Personal Data:</strong> Name, email address, phone number.</li>
                                     <li><strong>Usage Data:</strong> IP address, browser type, pages visited.</li>
@@ -156,7 +156,7 @@ const sectionStyle = {
 };
 
 const headingStyle = {
-    color: '#fff',
+    color: 'var(--accent-primary)',
     fontSize: '1.8rem',
     marginBottom: '1.5rem',
     borderBottom: '1px solid var(--glass-border)',

@@ -11,7 +11,7 @@ const Navbar = () => {
         <header>
             <div className="container nav-container">
                 <Link to="/" className="logo text-gradient">
-                    <Laptop size={32} color="#00d4ff" />
+                    <Laptop size={32} color="#0A84FF" />
                     {siteContent.brand.logoText}
                 </Link>
                 <nav>

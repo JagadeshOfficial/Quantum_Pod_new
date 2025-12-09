@@ -32,8 +32,8 @@ const Blogs = () => {
                 <div className="container animate-fade-in">
                     <span style={{
                         display: 'inline-block', padding: '0.5rem 1.5rem', borderRadius: '50px',
-                        background: 'rgba(255, 255, 255, 0.05)', border: '1px solid var(--glass-border)',
-                        color: 'var(--accent-secondary)', fontWeight: 'bold', marginBottom: '1.5rem'
+                        background: 'rgba(10, 132, 255, 0.1)', border: '1px solid var(--accent-primary)',
+                        color: 'var(--accent-primary)', fontWeight: 'bold', marginBottom: '1.5rem'
                     }}>
                         Quantum Insights
                     </span>
@@ -45,9 +45,9 @@ const Blogs = () => {
                     {/* Search & Filter Bar */}
                     <div style={{
                         maxWidth: '800px', margin: '0 auto',
-                        background: 'rgba(255,255,255,0.05)', borderRadius: '50px', padding: '0.5rem',
+                        background: 'rgba(0,0,0,0.05)', borderRadius: '50px', padding: '0.5rem',
                         border: '1px solid var(--glass-border)', display: 'flex', alignItems: 'center',
-                        backdropFilter: 'blur(10px)', boxShadow: '0 10px 30px rgba(0,0,0,0.3)'
+                        backdropFilter: 'blur(10px)', boxShadow: '0 10px 30px rgba(0,0,0,0.1)'
                     }}>
                         <div style={{ padding: '0 1.5rem' }}><Search size={22} color="var(--text-secondary)" /></div>
                         <input
@@ -56,7 +56,7 @@ const Blogs = () => {
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
                             style={{
-                                background: 'transparent', border: 'none', color: '#fff', fontSize: '1.1rem',
+                                background: 'transparent', border: 'none', color: 'var(--text-primary)', fontSize: '1.1rem',
                                 flex: 1, outline: 'none', padding: '0.8rem 0'
                             }}
                         />
@@ -69,8 +69,8 @@ const Blogs = () => {
                                 onClick={() => setSelectedCategory(cat)}
                                 style={{
                                     padding: '0.5rem 1.5rem', borderRadius: '30px', border: 'none', cursor: 'pointer',
-                                    background: selectedCategory === cat ? 'var(--accent-primary)' : 'rgba(255,255,255,0.05)',
-                                    color: selectedCategory === cat ? '#000' : 'var(--text-secondary)',
+                                    background: selectedCategory === cat ? 'var(--accent-primary)' : 'rgba(0,0,0,0.05)',
+                                    color: selectedCategory === cat ? '#fff' : 'var(--text-secondary)',
                                     fontWeight: '600', transition: 'all 0.3s'
                                 }}
                             >
@@ -129,7 +129,7 @@ const Blogs = () => {
                                             </div>
                                             <div style={{
                                                 width: '35px', height: '35px', borderRadius: '50%',
-                                                background: 'rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                                                background: 'rgba(0,0,0,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center',
                                                 transition: 'background 0.3s'
                                             }} className="hover-btn">
                                                 <ArrowRight size={18} color="var(--accent-primary)" />
@@ -144,7 +144,7 @@ const Blogs = () => {
                     {/* Newsletter */}
                     <div className="card" style={{
                         marginTop: '6rem', padding: '4rem 2rem', textAlign: 'center',
-                        background: 'linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(138, 43, 226, 0.1))',
+                        background: 'linear-gradient(135deg, rgba(10, 132, 255, 0.1), rgba(0, 230, 118, 0.1))',
                         border: '1px solid var(--accent-primary)'
                     }}>
                         <h2 style={{ fontSize: '2.2rem', marginBottom: '1rem' }}>Stay Ahead of the Curve</h2>
@@ -153,9 +153,9 @@ const Blogs = () => {
                         </p>
                         <div style={{
                             maxWidth: '500px', margin: '0 auto', display: 'flex',
-                            background: 'rgba(0,0,0,0.3)', padding: '0.5rem', borderRadius: '50px', border: '1px solid var(--glass-border)'
+                            background: 'rgba(255,255,255,0.8)', padding: '0.5rem', borderRadius: '50px', border: '1px solid var(--glass-border)'
                         }}>
-                            <input type="email" placeholder="Enter your email" style={{ flex: 1, background: 'transparent', border: 'none', padding: '0 1.5rem', outline: 'none', color: '#fff' }} />
+                            <input type="email" placeholder="Enter your email" style={{ flex: 1, background: 'transparent', border: 'none', padding: '0 1.5rem', outline: 'none', color: 'var(--text-primary)' }} />
                             <button className="btn btn-primary" style={{ borderRadius: '40px', padding: '0.8rem 2rem' }}>Subscribe</button>
                         </div>
                     </div>

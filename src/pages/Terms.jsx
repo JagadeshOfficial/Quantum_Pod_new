@@ -35,7 +35,7 @@ const Terms = () => {
             }}>
                 <div className="container animate-fade-in">
                     <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem' }}>
-                        <div style={{ padding: '0.8rem', background: 'rgba(0, 212, 255, 0.1)', borderRadius: '12px' }}>
+                        <div style={{ padding: '0.8rem', background: 'rgba(10, 132, 255, 0.1)', borderRadius: '12px' }}>
                             <FileText size={32} color="var(--accent-primary)" />
                         </div>
                         <h1 className="hero-title" style={{ fontSize: '3rem', margin: 0 }}>Terms & Conditions</h1>
@@ -52,7 +52,7 @@ const Terms = () => {
                     {/* Sticky Sidebar (Desktop mostly) */}
                     <aside style={{ flex: '0 0 280px' }}>
                         <div className="card" style={{ position: 'sticky', top: '100px', padding: '1.5rem', borderLeft: '4px solid var(--accent-primary)' }}>
-                            <h3 style={{ marginBottom: '1rem', fontSize: '1.2rem', color: '#fff' }}>Table of Contents</h3>
+                            <h3 style={{ marginBottom: '1rem', fontSize: '1.2rem', color: 'var(--text-primary)' }}>Table of Contents</h3>
                             <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
                                 {sections.map(section => (
                                     <li key={section.id}
@@ -147,7 +147,7 @@ const sectionStyle = {
 };
 
 const headingStyle = {
-    color: '#fff',
+    color: 'var(--accent-primary)',
     fontSize: '1.8rem',
     marginBottom: '1.5rem',
     borderBottom: '1px solid var(--glass-border)',

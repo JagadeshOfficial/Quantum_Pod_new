@@ -7,7 +7,7 @@ const iconMap = {
     Globe: <Globe size={32} color="var(--accent-primary)" />,
     Heart: <Heart size={32} color="var(--accent-secondary)" />,
     Zap: <Zap size={32} color="var(--accent-tertiary)" />,
-    Coffee: <Coffee size={32} color="#00d4ff" />
+    Coffee: <Coffee size={32} color="#0A84FF" />
 };
 
 const Careers = () => {
@@ -39,7 +39,7 @@ const Careers = () => {
                     backgroundPosition: 'center',
                     zIndex: -2
                 }}></div>
-                <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'rgba(0,0,0,0.7)', zIndex: -1 }}></div>
+                <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'rgba(255,255,255,0.85)', zIndex: -1 }}></div>
 
                 <div className="container animate-fade-in" style={{ zIndex: 1 }}>
                     <h1 className="hero-title" style={{ fontSize: '4rem', marginBottom: '1.5rem' }}>Do Your Best Work Here</h1>
@@ -116,7 +116,7 @@ const Careers = () => {
                                     style={{
                                         padding: '0.6rem 1.5rem', borderRadius: '30px', border: '1px solid var(--glass-border)',
                                         background: selectedDept === dept ? 'var(--accent-primary)' : 'rgba(255,255,255,0.05)',
-                                        color: selectedDept === dept ? '#000' : 'var(--text-secondary)',
+                                        color: selectedDept === dept ? '#FFF' : 'var(--text-secondary)',
                                         cursor: 'pointer', fontWeight: 'bold'
                                     }}
                                 >
@@ -141,7 +141,7 @@ const Careers = () => {
                             }}>
                                 <div style={{ flex: '1 1 400px' }}>
                                     <div style={{ display: 'flex', gap: '10px', marginBottom: '0.8rem' }}>
-                                        <span style={{ fontSize: '0.8rem', padding: '4px 12px', borderRadius: '4px', background: 'rgba(0, 212, 255, 0.1)', color: 'var(--accent-primary)', fontWeight: 'bold' }}>{job.dept}</span>
+                                        <span style={{ fontSize: '0.8rem', padding: '4px 12px', borderRadius: '4px', background: 'rgba(10, 132, 255, 0.1)', color: 'var(--accent-primary)', fontWeight: 'bold' }}>{job.dept}</span>
                                         {job.salary && <span style={{ fontSize: '0.8rem', padding: '4px 12px', borderRadius: '4px', background: 'rgba(0, 255, 0, 0.1)', color: '#4caf50', display: 'flex', alignItems: 'center', gap: '4px' }}><DollarSign size={12} /> {job.salary}</span>}
                                     </div>
                                     <h3 style={{ fontSize: '1.4rem', marginBottom: '0.5rem' }}>{job.role}</h3>

@@ -9,7 +9,7 @@ const iconMap = {
     Zap: <Zap size={32} color="var(--accent-primary)" />,
     Users: <Users size={32} color="var(--accent-secondary)" />,
     Award: <Award size={32} color="var(--accent-tertiary)" />,
-    Shield: <Shield size={32} color="#00d4ff" />
+    Shield: <Shield size={32} color="#0A84FF" />
 };
 
 const About = () => {
@@ -37,7 +37,7 @@ const About = () => {
                 }}></div>
                 <div style={{
                     position: 'absolute', top: 0, left: 0, width: '100%', height: '100%',
-                    background: 'rgba(0,0,0,0.75)',
+                    background: 'rgba(255,255,255,0.85)',
                     zIndex: -1
                 }}></div>
 

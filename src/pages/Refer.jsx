@@ -11,7 +11,7 @@ const Refer = () => {
             {/* Gamified Hero */}
             <section style={{
                 padding: '8rem 0 5rem',
-                background: 'linear-gradient(135deg, #1a0b2e 0%, #000 100%)',
+                background: 'linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%)',
                 textAlign: 'center',
                 position: 'relative',
                 overflow: 'hidden'
@@ -21,11 +21,11 @@ const Refer = () => {
                 <div style={{ position: 'absolute', bottom: '20%', right: '10%', width: '150px', height: '150px', background: 'radial-gradient(circle, var(--accent-secondary) 0%, transparent 70%)', opacity: 0.2, borderRadius: '50%' }}></div>
 
                 <div className="container animate-fade-in" style={{ position: 'relative', zIndex: 2 }}>
-                    <div style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', padding: '0.5rem 1.5rem', borderRadius: '30px', background: 'rgba(255, 215, 0, 0.15)', color: '#FFD700', border: '1px solid rgba(255, 215, 0, 0.3)', marginBottom: '1.5rem', fontWeight: 'bold' }}>
+                    <div style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', padding: '0.5rem 1.5rem', borderRadius: '30px', background: 'rgba(255, 215, 0, 0.15)', color: '#FFAA00', border: '1px solid rgba(255, 215, 0, 0.3)', marginBottom: '1.5rem', fontWeight: 'bold' }}>
                         <Trophy size={18} /> #1 Referral Program in EdTech
                     </div>
                     <h1 className="hero-title" style={{ fontSize: '4rem', marginBottom: '1rem', lineHeight: '1.1' }}>
-                        Refer Friends. <br /> <span style={{ color: '#FFD700' }}>Earn ₹{rewardPerReferral.toLocaleString()}</span> Each.
+                        Refer Friends. <br /> <span style={{ color: '#FFAA00' }}>Earn ₹{rewardPerReferral.toLocaleString()}</span> Each.
                     </h1>
                     <p style={{ fontSize: '1.3rem', color: 'var(--text-secondary)', maxWidth: '600px', margin: '0 auto 3rem' }}>
                         Help your friends launch their tech careers and get rewarded with Amazon Vouchers or Cash straight to your bank account.
@@ -33,11 +33,11 @@ const Refer = () => {
 
                     {/* Copy Link Box */}
                     <div style={{
-                        maxWidth: '500px', margin: '0 auto', background: 'rgba(255,255,255,0.1)',
+                        maxWidth: '500px', margin: '0 auto', background: 'rgba(0,0,0,0.05)',
                         padding: '0.5rem', borderRadius: '12px', display: 'flex', alignItems: 'center',
                         border: '1px solid var(--glass-border)', backdropFilter: 'blur(10px)'
                     }}>
-                        <div style={{ flex: 1, textAlign: 'left', paddingLeft: '1rem', color: '#ccc', fontFamily: 'monospace' }}>quantumpod.com/ref/JAGAD123</div>
+                        <div style={{ flex: 1, textAlign: 'left', paddingLeft: '1rem', color: 'var(--text-secondary)', fontFamily: 'monospace' }}>quantumpod.com/ref/JAGAD123</div>
                         <button className="btn btn-primary" style={{ padding: '0.6rem 1.5rem', borderRadius: '8px' }}>
                             <Copy size={18} /> Copy
                         </button>
@@ -49,7 +49,7 @@ const Refer = () => {
             <section className="section-padding">
                 <div className="container">
                     <div className="card" style={{
-                        background: 'linear-gradient(to right, #111, #1a1a2e)',
+                        background: 'linear-gradient(to right, var(--bg-tertiary), var(--bg-secondary))',
                         border: '1px solid var(--glass-border)', padding: '4rem', textAlign: 'center',
                         maxWidth: '800px', margin: '0 auto'
                     }}>
@@ -72,13 +72,13 @@ const Refer = () => {
                         </div>
 
                         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', textAlign: 'left' }}>
-                            <div style={{ padding: '2rem', background: 'rgba(255,255,255,0.05)', borderRadius: '16px' }}>
+                            <div style={{ padding: '2rem', background: 'rgba(0,0,0,0.05)', borderRadius: '16px' }}>
                                 <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>If you refer</p>
-                                <h3 style={{ fontSize: '3rem', margin: 0, color: '#fff' }}>{referralCount} <span style={{ fontSize: '1.5rem' }}>Friends</span></h3>
+                                <h3 style={{ fontSize: '3rem', margin: 0, color: 'var(--text-primary)' }}>{referralCount} <span style={{ fontSize: '1.5rem' }}>Friends</span></h3>
                             </div>
-                            <div style={{ padding: '2rem', background: 'rgba(0, 255, 128, 0.1)', borderRadius: '16px', border: '1px solid rgba(0, 255, 128, 0.3)' }}>
-                                <p style={{ fontSize: '1.1rem', color: '#aaffcc', marginBottom: '0.5rem' }}>You Earn</p>
-                                <h3 style={{ fontSize: '3rem', margin: 0, color: '#00ff80' }}>₹{(referralCount * rewardPerReferral).toLocaleString()}</h3>
+                            <div style={{ padding: '2rem', background: 'rgba(0, 230, 118, 0.1)', borderRadius: '16px', border: '1px solid rgba(0, 230, 118, 0.3)' }}>
+                                <p style={{ fontSize: '1.1rem', color: 'var(--accent-secondary)', marginBottom: '0.5rem' }}>You Earn</p>
+                                <h3 style={{ fontSize: '3rem', margin: 0, color: 'var(--accent-secondary)' }}>₹{(referralCount * rewardPerReferral).toLocaleString()}</h3>
                             </div>
                         </div>
                     </div>
@@ -128,12 +128,12 @@ const Refer = () => {
                                 background: idx < 3 ? `rgba(255, 215, 0, ${0.1 - idx * 0.03})` : 'transparent'
                             }}>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                                    <span style={{ fontWeight: 'bold', color: idx === 0 ? '#FFD700' : idx === 1 ? '#C0C0C0' : idx === 2 ? '#CD7F32' : '#fff' }}>
+                                    <span style={{ fontWeight: 'bold', color: idx === 0 ? '#FFAA00' : idx === 1 ? '#A0A0A0' : idx === 2 ? '#CD7F32' : 'var(--text-primary)' }}>
                                         #{user.rank}
                                     </span>
                                     <span style={{ fontSize: '1.1rem' }}>{user.name}</span>
                                 </div>
-                                <span style={{ color: '#00ff80', fontWeight: 'bold' }}>{user.earned}</span>
+                                <span style={{ color: 'var(--accent-secondary)', fontWeight: 'bold' }}>{user.earned}</span>
                             </div>
                         ))}
                     </div>

@@ -19,13 +19,13 @@ const CourseDetails = () => {
     return (
         <main>
             {/* Course Hero */}
-            <section className="course-hero" style={{ background: course.heroImage ? `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url(${course.heroImage}) center/cover fixed` : undefined }}>
+            <section className="course-hero" style={{ background: course.heroImage ? `linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.95)), url(${course.heroImage}) center/cover fixed` : undefined }}>
                 <div className="container course-hero-content animate-fade-in">
                     <div className="course-hero-text">
                         <span style={{ color: 'var(--accent-primary)', fontWeight: 'bold' }}>CERTIFICATION PROGRAM</span>
                         <h1 className="hero-title" style={{ fontSize: '3rem', margin: '1rem 0' }}>{course.title}</h1>
                         <div style={{
-                            background: 'rgba(0, 212, 255, 0.1)',
+                            background: 'rgba(10, 132, 255, 0.1)',
                             border: '1px solid var(--accent-primary)',
                             padding: '0.5rem 1rem',
                             borderRadius: '8px',
@@ -120,7 +120,7 @@ const CourseDetails = () => {
                                 const n = name.toLowerCase();
                                 // Languages & Core
                                 if (n.includes('python')) return 'https://cdn.simpleicons.org/python/3776AB';
-                                if (n.includes('java') && !n.includes('script')) return 'https://cdn.simpleicons.org/openjdk/FFFFFF';
+                                if (n.includes('java') && !n.includes('script')) return 'https://cdn.simpleicons.org/openjdk/000000';
                                 if (n.includes('c++')) return 'https://cdn.simpleicons.org/cplusplus/00599C';
 
                                 // Data Science / Analytics
@@ -179,7 +179,7 @@ const CourseDetails = () => {
 
                                 // General
                                 if (n.includes('sql')) return 'https://cdn.simpleicons.org/mysql/4479A1';
-                                if (n.includes('github') || n.includes('git')) return 'https://cdn.simpleicons.org/github/ffffff';
+                                if (n.includes('github') || n.includes('git')) return 'https://cdn.simpleicons.org/github/000000';
                                 if (n.includes('linux')) return 'https://cdn.simpleicons.org/linux/FCC624';
 
                                 return null;
@@ -198,7 +198,7 @@ const CourseDetails = () => {
                                     width: '130px',
                                     height: '130px',
                                     transition: 'transform 0.3s ease',
-                                    background: 'rgba(255,255,255,0.03)'
+                                    background: 'rgba(0,0,0,0.05)'
                                 }}>
                                     {logo ? (
                                         <img src={logo} alt={tool} style={{ width: '45px', height: '45px', objectFit: 'contain' }} />

@@ -22,7 +22,7 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-col">
-                    <h4 style={{ color: '#fff', marginBottom: '1.5rem', fontSize: '1.2rem' }}>Our Offerings</h4>
+                    <h4 style={{ color: 'var(--text-primary)', marginBottom: '1.5rem', fontSize: '1.2rem' }}>Our Offerings</h4>
                     <ul style={{ listStyle: 'none', padding: 0 }}>
                         {siteContent.home.courseCategories.map((course) => (
                             <li key={course.id} style={{ marginBottom: '0.8rem' }}>
@@ -35,7 +35,7 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-col">
-                    <h4 style={{ color: '#fff', marginBottom: '1.5rem', fontSize: '1.2rem' }}>Company</h4>
+                    <h4 style={{ color: 'var(--text-primary)', marginBottom: '1.5rem', fontSize: '1.2rem' }}>Company</h4>
                     <ul style={{ listStyle: 'none', padding: 0 }}>
                         <li style={{ marginBottom: '0.8rem' }}><Link to="/about" className="footer-link" style={footerLinkStyle}>About Us</Link></li>
                         <li style={{ marginBottom: '0.8rem' }}><Link to="/blogs" className="footer-link" style={footerLinkStyle}>Blogs</Link></li>
@@ -47,7 +47,7 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-col">
-                    <h4 style={{ color: '#fff', marginBottom: '1.5rem', fontSize: '1.2rem' }}>More</h4>
+                    <h4 style={{ color: 'var(--text-primary)', marginBottom: '1.5rem', fontSize: '1.2rem' }}>More</h4>
                     <ul style={{ listStyle: 'none', padding: 0 }}>
                         <li style={{ marginBottom: '0.8rem' }}><Link to="/teach" className="footer-link" style={footerLinkStyle}>Teach at QuantumPod</Link></li>
                         <li style={{ marginBottom: '0.8rem' }}><Link to="/hire" className="footer-link" style={footerLinkStyle}>Hire from Us</Link></li>

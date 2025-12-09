@@ -31,7 +31,7 @@ const BlogDetails = () => {
 
             <div className="container" style={{ position: 'relative', marginTop: '-150px', zIndex: 10 }}>
                 {/* Back Link */}
-                <Link to="/blogs" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--accent-primary)', marginBottom: '1.5rem', textDecoration: 'none', background: 'rgba(0,0,0,0.5)', padding: '0.5rem 1rem', borderRadius: '30px', backdropFilter: 'blur(5px)' }}>
+                <Link to="/blogs" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--accent-primary)', marginBottom: '1.5rem', textDecoration: 'none', background: 'rgba(255,255,255,0.5)', padding: '0.5rem 1rem', borderRadius: '30px', backdropFilter: 'blur(5px)' }}>
                     <ArrowLeft size={20} /> Back to Blogs
                 </Link>
 
@@ -41,7 +41,7 @@ const BlogDetails = () => {
                     {/* Header */}
                     <div style={{ padding: '3rem 3rem 1rem 3rem', borderBottom: '1px solid var(--glass-border)' }}>
                         <div style={{ display: 'flex', gap: '1rem', marginBottom: '1.5rem', fontSize: '0.9rem' }}>
-                            <span style={{ padding: '0.3rem 0.8rem', borderRadius: '20px', background: 'rgba(0, 212, 255, 0.15)', color: 'var(--accent-primary)', fontWeight: 'bold' }}>
+                            <span style={{ padding: '0.3rem 0.8rem', borderRadius: '20px', background: 'rgba(10, 132, 255, 0.15)', color: 'var(--accent-primary)', fontWeight: 'bold' }}>
                                 {blog.category}
                             </span>
                             <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)' }}>

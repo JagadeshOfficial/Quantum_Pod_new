@@ -32,14 +32,14 @@ const Contact = () => {
                 }}></div>
                 <div style={{
                     position: 'absolute', top: 0, left: 0, width: '100%', height: '100%',
-                    background: 'linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(10,10,20,1))',
+                    background: 'linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(255,255,255,1))',
                     zIndex: -1
                 }}></div>
 
                 <div className="container animate-fade-in" style={{ zIndex: 1, marginTop: '-3rem' }}>
                     <span style={{
                         display: 'inline-block', padding: '0.5rem 1.5rem', borderRadius: '50px',
-                        background: 'rgba(255, 255, 255, 0.1)', border: '1px solid var(--accent-primary)',
+                        background: 'rgba(10, 132, 255, 0.1)', border: '1px solid var(--accent-primary)',
                         color: 'var(--accent-primary)', fontWeight: 'bold', marginBottom: '1.5rem',
                         backdropFilter: 'blur(5px)'
                     }}>
@@ -61,9 +61,9 @@ const Contact = () => {
                         gap: '2rem',
                     }}>
                         {/* Interactive Form Card */}
-                        <div className="card" style={{ padding: '3rem', boxShadow: '0 20px 40px rgba(0,0,0,0.4)', background: 'rgba(30, 30, 40, 0.95)' }}>
+                        <div className="card" style={{ padding: '3rem', boxShadow: '0 20px 40px rgba(0,0,0,0.1)', background: 'rgba(255, 255, 255, 0.95)' }}>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '2rem' }}>
-                                <div style={{ padding: '10px', background: 'rgba(0, 212, 255, 0.1)', borderRadius: '12px' }}>
+                                <div style={{ padding: '10px', background: 'rgba(10, 132, 255, 0.1)', borderRadius: '12px' }}>
                                     <MessageCircle size={32} color="var(--accent-primary)" />
                                 </div>
                                 <h2 style={{ fontSize: '2rem', margin: 0 }}>Write to Us</h2>
@@ -104,7 +104,7 @@ const Contact = () => {
                         {/* Info & Map Stack */}
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
                             {/* Address Card */}
-                            <div className="card" style={{ padding: '2rem', display: 'flex', alignItems: 'start', gap: '1.5rem', background: 'rgba(30, 30, 40, 0.8)' }}>
+                            <div className="card" style={{ padding: '2rem', display: 'flex', alignItems: 'start', gap: '1.5rem', background: 'rgba(255, 255, 255, 0.8)' }}>
                                 <div style={{ ...iconBoxStyle, background: 'rgba(255, 215, 0, 0.1)' }}><MapPin size={24} color="#FFD700" /></div>
                                 <div>
                                     <h3 style={{ fontSize: '1.4rem', marginBottom: '0.5rem' }}>Visit Our HQ</h3>
@@ -193,7 +193,7 @@ const labelStyle = {
 };
 
 const inputStyle = {
-    background: 'rgba(0, 0, 0, 0.2)',
+    background: 'rgba(0, 0, 0, 0.05)',
     border: '1px solid var(--glass-border)',
     borderRadius: '8px',
     padding: '1rem',
