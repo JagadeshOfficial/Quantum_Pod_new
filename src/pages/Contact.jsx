@@ -55,11 +55,7 @@ const Contact = () => {
             {/* Overlapping Content Section */}
             <section style={{ paddingBottom: '5rem', marginTop: '-100px', position: 'relative', zIndex: 10 }}>
                 <div className="container">
-                    <div style={{
-                        display: 'grid',
-                        gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
-                        gap: '2rem',
-                    }}>
+                    <div className="contact-grid">
                         {/* Interactive Form Card */}
                         <div className="card" style={{ padding: '3rem', boxShadow: '0 20px 40px rgba(0,0,0,0.4)', background: 'rgba(30, 30, 40, 0.95)' }}>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '2rem' }}>
@@ -70,7 +66,7 @@ const Contact = () => {
                             </div>
 
                             <form style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-                                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+                                <div className="form-row">
                                     <div className="form-group">
                                         <label style={labelStyle}>Full Name</label>
                                         <input type="text" placeholder="John Doe" style={inputStyle} />
@@ -116,7 +112,7 @@ const Contact = () => {
                             </div>
 
                             {/* Contact Details Grid */}
-                            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+                            <div className="contact-details-grid">
                                 <div className="card" style={{ padding: '1.5rem', textAlign: 'center' }}>
                                     <Mail size={32} color="var(--accent-secondary)" style={{ marginBottom: '1rem' }} />
                                     <p style={{ fontWeight: 'bold', marginBottom: '0.5rem' }}>Email</p>
